@@ -1,0 +1,52 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+  font-family: $flaticon-font;
+  src: url("./flaticon.ttf?feccece38243c652fc68d03eea84990e") format("truetype"),
+    url("./flaticon.woff?feccece38243c652fc68d03eea84990e") format("woff"),
+    url("./flaticon.woff2?feccece38243c652fc68d03eea84990e") format("woff2"),
+    url("./flaticon.eot?feccece38243c652fc68d03eea84990e#iefix")
+      format("embedded-opentype"),
+    url("./flaticon.svg?feccece38243c652fc68d03eea84990e#flaticon")
+      format("svg");
+}
+
+i[class^="flaticon-"]:before,
+i[class*=" flaticon-"]:before {
+  font-family: flaticon !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+  "keyword": "\f101",
+  "marketing": "\f102",
+  "social-media": "\f103",
+  "rising": "\f104",
+  "ppc": "\f105",
+  "quality": "\f106",
+);
+
+.flaticon-keyword:before {
+  content: map-get($flaticon-map, "keyword");
+}
+.flaticon-marketing:before {
+  content: map-get($flaticon-map, "marketing");
+}
+.flaticon-social-media:before {
+  content: map-get($flaticon-map, "social-media");
+}
+.flaticon-rising:before {
+  content: map-get($flaticon-map, "rising");
+}
+.flaticon-ppc:before {
+  content: map-get($flaticon-map, "ppc");
+}
+.flaticon-quality:before {
+  content: map-get($flaticon-map, "quality");
+}

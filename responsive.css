@@ -1,0 +1,25 @@
+@media only screen and (max-width: 991px) {
+  .topber {
+    display: none;
+  }
+  .slider-content-wrapper h1 {
+    font-size: 35px !important;
+  }
+
+  .slider-content-wrapper p {
+    width: 276px !important;
+    font-size: 16px !important;
+  }
+  section#slider {
+    height: auto !important;
+  }
+  ul.menuitem {
+    display: none !important;
+  }
+}
+svg.gray {
+  fill: white;
+}
+.footer-content {
+  color: white;
+}
